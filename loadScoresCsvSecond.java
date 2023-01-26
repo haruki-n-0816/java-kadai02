@@ -12,7 +12,7 @@ class loadScoresCsvSecond{
         String score;
 
         // パスを適切に設定してください パスは ./java-kadai02
-        try (BufferedReader reader = Files.newBufferedReader(Paths.get(".", "java-kadai01", "scores.csv"))) {
+        try (BufferedReader reader = Files.newBufferedReader(Paths.get(".", "java-kadai02", "scores.csv"))) {
             var line = "";
             while ((line = reader.readLine()) != null) {
                 StringTokenizer st = new StringTokenizer(line, ",",false);
